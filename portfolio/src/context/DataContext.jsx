@@ -11,7 +11,36 @@ const DataProvider = ({children}) => {
         likelist : []
     });
     // 상품정보
-
+    const [productList, setProductList] = useState([
+        {
+            productId : 1,
+            productName : "",
+            productDetail : "",
+            productColor : "white",
+            productPicture : [ ]
+        },
+        {
+            productId : 1,
+            productName : "",
+            productDetail : "",
+            productColor : "white",
+            productPicture : [ ]
+        },
+        {
+            productId : 1,
+            productName : "",
+            productDetail : "",
+            productColor : "white",
+            productPicture : [ ]
+        },
+        {
+            productId : 1,
+            productName : "",
+            productDetail : "",
+            productColor : "white",
+            productPicture : [ ]
+        },
+    ])
     
     // 댓글정보
 

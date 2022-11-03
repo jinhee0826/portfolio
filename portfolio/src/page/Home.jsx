@@ -30,11 +30,13 @@ const Home = () => {
           <Row className="" 
           // 그거 css 넣어줘야 함 
           >
-            <Col className="">
+            <Col className= " my-3">
               <Slider {...settings} >
               { wedding.map((img,index)=>(
                   <div key={index}>
-                    <img src={require(`../img/${img.img}`)} alt="" />
+                    <img 
+                    style={{ width : "1200px" , height : "900px"}}
+                    src={require(`../img/${img.img}`)} alt="" />
                   </div>
                 )) }
         </Slider>
