@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row, Button } from "react-bootstrap";
 
 const ProductDisplay = (props) => {
     const {product} = props;

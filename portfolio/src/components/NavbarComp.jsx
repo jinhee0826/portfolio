@@ -38,7 +38,7 @@ function NavbarComp() {
             <NavLink to="/" className="nav-link">
               Home
             </NavLink>
-            <NavLink to="/" className="nav-link">Dress</NavLink>
+            <NavLink to="dress" className="nav-link">Dress</NavLink>
             {/* 이거 나중에 링크 걸어줘야 함  */}
             <NavLink to="/" className="nav-link">Bouquet</NavLink>
             <NavLink to="/" className="nav-link">Jewlery</NavLink>
