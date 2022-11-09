@@ -49,7 +49,7 @@ function NavbarComp() {
             <NavLink className="nav-link" to="/mypage">
               {data.state.user.name}님의 MyPage
             </NavLink>
-            <Button variant='outline-light' onClick={logOut}>LogOut</Button>
+            <Button  variant='outline-light' onClick={logOut}>LogOut</Button>
           </Nav>
           ) : (
             <div>

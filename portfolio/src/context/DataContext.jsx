@@ -16,7 +16,8 @@ const DataProvider = ({children}) => {
             productId : 1,
             productName : "웨딩드레스1",
             productDetail : "비즈 장식을 더한 화사한 드레스",
-            productPicture : ["dress1.jpg"]
+            productPicture : ["dress1.jpg"],
+            productPrice : ""
         },
         {
             productId : 2,

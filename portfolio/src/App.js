@@ -10,6 +10,7 @@ import Home from "./page/Home"
 import { DataProvider } from './context/DataContext';
 import ProductDress from './page/ProductDress';
 import ProductDetaile from './page/ProductDetaile';
+import Proflie from './page/Proflie';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
             <Route path='dress' element={<ProductDress />}></Route>
             <Route path='loginform' element={<Login />} />
             <Route path='product/:id' element={<ProductDetaile />}></Route>
+            <Route path='/mypage' element={<Proflie />}></Route>
           </Route>
         </Routes>
       </DataProvider>
