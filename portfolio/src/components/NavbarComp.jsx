@@ -26,7 +26,7 @@ function NavbarComp() {
   }
   return (
     <>
-      <Navbar bg="primary" variant="dark">
+      <Navbar bg="light" variant="light" >
         <Container>
           <Navbar.Brand>
           <FontAwesomeIcon icon={faShop} 
@@ -49,11 +49,11 @@ function NavbarComp() {
             <NavLink className="nav-link" to="/mypage">
               {data.state.user.name}님의 MyPage
             </NavLink>
-            <Button  variant='outline-light' onClick={logOut}>LogOut</Button>
+            <Button    variant="outline-secondary" onClick={logOut}>LogOut</Button>
           </Nav>
           ) : (
             <div>
-              <Button variant='outline-light' onClick={()=>{navigate('/loginform')}}>LogIn</Button>
+              <Button   variant="outline-secondary" onClick={()=>{navigate('/loginform')}}>LogIn</Button>
             </div>
           ) }
         </Navbar.Collapse>

@@ -1,0 +1,16 @@
+.navbar{
+    background-color: greenyellow;
+}
+
+.dress {
+    display: inline-flex;
+    margin: 10px;
+}
+
+.img {
+    height: 350px;
+    width: 270px;
+    margin-top: 9px;
+    margin-left: 8px;
+
+}

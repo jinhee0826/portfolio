@@ -11,6 +11,7 @@ import { DataProvider } from './context/DataContext';
 import ProductDress from './page/ProductDress';
 import ProductDetaile from './page/ProductDetaile';
 import Proflie from './page/Proflie';
+import './css/style.css';
 
 
 function App() {

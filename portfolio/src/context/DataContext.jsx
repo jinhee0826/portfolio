@@ -17,25 +17,35 @@ const DataProvider = ({children}) => {
             productName : "웨딩드레스1",
             productDetail : "비즈 장식을 더한 화사한 드레스",
             productPicture : ["dress1.jpg"],
-            productPrice : ""
+            productPrice : "100,000,000원"
         },
         {
             productId : 2,
             productName : "웨딩드레스2",
             productDetail : "뒷모습에 초점을 맞춰서 행진할 때 이쁜 드레스",
-            productPicture : ["dress2.jpg" ]
+            productPicture : ["dress2.jpg" ],
+            productPrice : "100,000,000원"
         },
         {
             productId : 3,
             productName : "웨딩드레스3",
             productDetail : "심플하고 세련된 스타일의 드레스 ",
-            productPicture : ["dress3.jpg" ]
+            productPicture : ["dress3.jpg" ],
+            productPrice : "100,000,000원"
         },
         {
             productId : 4,
             productName : "웨딩드레스4",
             productDetail : "전문가가 섬세히 자수를 뜬 드레스 ",
-            productPicture : ["dress4.jpg" ]
+            productPicture : ["dress4.jpg" ],
+            productPrice : "100,000,000원"
+        },
+        {
+            productId : 5,
+            productName : "웨딩드레스5",
+            productDetail : "자연스러움을 추구하는 드레스 ",
+            productPicture : ["dress5.jpg" ],
+            productPrice : "100,000,000원"
         },
     ])
     

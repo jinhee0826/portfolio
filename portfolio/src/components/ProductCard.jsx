@@ -45,16 +45,17 @@ function ProductCard(props) {
   };
   return (
     <Card style={{ width: '18rem' }}>
-      <Card.Img 
+      <Card.Img className='img'
       onClick={()=>{navigate("/product/"+product.productId)}}
-      variant="top" src={require(`../img/${product.productPicture[0]}`)}
-      style={{magin : '30px'}} />
+      variant="top" src={require(`../img/${product.productPicture[0]}`)} />
       <Card.Body>
         <Card.Title>{product.productName}</Card.Title>
-        <Card.Body>
-          {product.productDetail}
-          <br />
-          
+        <Card.Body className='align-item-center'>
+          <div>
+            <p>{product.productDetail}</p>
+            <p>{product.productPrice}</p>
+          </div>
+
         </Card.Body>
         <ButtonGroup size="sm">
         <Button variant="outline-primary" onClick={ toggleLike }>
