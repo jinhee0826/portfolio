@@ -1,11 +1,17 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css"
 import { Col, Container, Row } from "react-bootstrap";
+import Alert from "react-bootstrap/Alert";
+import Button from "react-bootstrap/Button";
+
 
 
 const Home = () => {
+
+  const [show, setShow] = useState(true);
+
     const settings = {
       dots: true,
       infinite: true,
@@ -26,16 +32,33 @@ const Home = () => {
     ]);
 
     return (  
-        <Container>
-          <Row className="" 
-          // 그거 css 넣어줘야 함 
-          >
+        <Container className="warp">
+          <Row>
             <Col className= " my-3">
+              <Alert show={show} variant="light">
+              <Alert.Heading>당신의 행복을 축하드립니다</Alert.Heading>
+                <p>
+                  함께하는 모든 순간이 행복으로 가득할 수 있도록 도와드리겠습니다
+                </p>
+                <hr />
+                <div className="d-flex justify-content-end">
+              <Button
+                onClick={() => setShow(false)} 
+                variant="outline-secondary" >
+                확인
+              </Button>
+            </div>
+          </Alert>
               <Slider {...settings} >
               { wedding.map((img,index)=>(
                   <div key={index}>
                     <img 
-                    style={{ width : "1200px" , height : "900px"}}
+                    style={{
+                      
+                      width : "100%" , 
+                      height : "100%",
+
+                    }}
                     src={require(`../img/${img.img}`)} alt="" />
                   </div>
                 )) }

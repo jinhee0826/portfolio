@@ -27,7 +27,7 @@ const Login = () => {
         <Form.Label>Password</Form.Label>
         <Form.Control type="password" placeholder="비밀번호를 입력해주세요" />
       </Form.Group>
-      <Button variant="primary" type="submit">
+      <Button variant="outline-secondary" type="submit">
         확인
       </Button>
     </Form>

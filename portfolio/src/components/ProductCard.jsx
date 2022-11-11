@@ -57,12 +57,12 @@ function ProductCard(props) {
           </div>
 
         </Card.Body>
-        <ButtonGroup size="sm">
-        <Button variant="outline-primary" onClick={ toggleLike }>
+        <ButtonGroup size="sm aline-center">
+        <Button variant="outline-secondary" onClick={ toggleLike }>
             <FontAwesomeIcon icon={ likeCheck ? activeHeart : disactiveHeart} />
         </Button>
-        <Button>장바구니</Button>
-        <Button>구매하기</Button>
+        <Button variant="outline-secondary">장바구니</Button>
+        <Button variant="outline-secondary">구매하기</Button>
       </ButtonGroup>
 
       </Card.Body>

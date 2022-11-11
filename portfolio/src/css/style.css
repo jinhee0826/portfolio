@@ -1,16 +1,28 @@
-.navbar{
-    background-color: greenyellow;
+
+.warp {
+  display: inline-block;
+
+
 }
 
-.dress {
+  .dress {
     display: inline-flex;
     margin: 10px;
-}
-
-.img {
+  }
+  
+  .img {
     height: 350px;
     width: 270px;
     margin-top: 9px;
     margin-left: 8px;
-
-}
+  }
+  
+  .footer {
+    margin-top: 13pc;
+    display: flexbox;
+    align-content: center;
+    background-color: #f8f9fa;
+    position : fixed;
+    bottom: 0;
+    width: 100%;
+  }

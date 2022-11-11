@@ -27,7 +27,9 @@ const ProductDetaile = () => {
             <br></br>
             <hr />
             <CommentInput id={id}/>
-            <ListGroup style={{textAlign : "left"}}>
+            <ListGroup  style={{
+                textAlign : "left",
+                }}>
                 {comments.map((comment)=>( <Comment key={comment.commentId} comment={comment} />))}
             </ListGroup>
 

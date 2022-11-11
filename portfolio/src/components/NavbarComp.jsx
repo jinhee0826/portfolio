@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faShop } from "@fortawesome/free-solid-svg-icons";
+import { faHandHoldingHeart, faCircleUser} from "@fortawesome/free-solid-svg-icons";
 
 import { NavLink, useNavigate } from "react-router-dom";
 import { Button } from "react-bootstrap";
@@ -28,25 +28,22 @@ function NavbarComp() {
     <>
       <Navbar bg="light" variant="light" >
         <Container>
-          <Navbar.Brand>
-          <FontAwesomeIcon icon={faShop} 
-          // 이거 다른거로 걸어주고 싶은데 안됨 물어봐야함
-          /> 
-            Wedding
+          <Navbar.Brand >
+          <FontAwesomeIcon className='mx-2' icon={faHandHoldingHeart} /> 
+            GINIWEDDING
           </Navbar.Brand>
           <Nav className="me-auto">
             <NavLink to="/" className="nav-link">
               Home
             </NavLink>
             <NavLink to="dress" className="nav-link">Dress</NavLink>
-            {/* 이거 나중에 링크 걸어줘야 함  */}
-            <NavLink to="/" className="nav-link">Bouquet</NavLink>
-            <NavLink to="/" className="nav-link">Jewlery</NavLink>
+            <NavLink to="bouquet" className="nav-link">Bouquet</NavLink>
           </Nav>
           
         <Navbar.Collapse className="justify-content-end">
           {login ? (<Nav>
             <NavLink className="nav-link" to="/mypage">
+              <FontAwesomeIcon className='mx-2' icon={faCircleUser} size='lg' />
               {data.state.user.name}님의 MyPage
             </NavLink>
             <Button    variant="outline-secondary" onClick={logOut}>LogOut</Button>

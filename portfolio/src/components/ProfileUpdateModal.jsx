@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircleUser } from '@fortawesome/free-solid-svg-icons';
 import React, { useState } from 'react';
 import { useRef } from 'react';
 import { useContext } from 'react';
@@ -31,7 +33,7 @@ function  ProfileUpdateModal() {
 
   return (
     <>
-      <Button variant="light"  onClick={handleShow} >
+      <Button variant="light"  onClick={handleShow} className='mt-3 d-flex' >
         프로필 사진 수정하기
       </Button>
 

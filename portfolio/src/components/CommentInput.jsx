@@ -40,7 +40,7 @@ const CommentInput = () => {
             </FloatingLabel>
           </Col>
           <Col xs={2} className="d-grid gap-2">
-            <Button variant="primary" onClick={addComment}>입력</Button>
+            <Button variant="light" onClick={addComment}>입력</Button>
           </Col>
         </Row>
       </Container>

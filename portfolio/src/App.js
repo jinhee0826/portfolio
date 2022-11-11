@@ -12,6 +12,7 @@ import ProductDress from './page/ProductDress';
 import ProductDetaile from './page/ProductDetaile';
 import Proflie from './page/Proflie';
 import './css/style.css';
+import Bouquet from './page/Bouquet';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route path="/" element={<Home />} />
             <Route path='dress' element={<ProductDress />}></Route>
+            <Route path='bouquet' element={<Bouquet />}></Route>
             <Route path='loginform' element={<Login />} />
             <Route path='product/:id' element={<ProductDetaile />}></Route>
             <Route path='/mypage' element={<Proflie />}></Route>
